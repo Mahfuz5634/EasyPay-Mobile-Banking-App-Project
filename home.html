@@ -32,7 +32,9 @@
         <div class="flex justify-center items-center">
           <img class="h-[60px]" src="./assets/Group.png" alt="" />
           <div class="ml-3">
-            <h1 class="font-bold text-2xl">$ <span id="total-balance">45000</span></h1>
+            <h1 class="font-bold text-2xl">
+              $ <span id="total-balance">45000</span>
+            </h1>
             <p>Available Balance</p>
           </div>
         </div>
@@ -56,13 +58,13 @@
         class="min-h-[200px] max-w-lg m-auto h-[200px] p-3 grid grid-cols-3 grid-rows-2 gap-2"
       >
         <div
-          class="text-center border-2 font-semibold border-gray-300 flex flex-col justify-center items-center rounded-2xl"
+          id="add-money-button"  class="text-center border-2 font-semibold border-gray-300 flex flex-col justify-center items-center rounded-2xl"
         >
           <img src="./assets/wallet1.png" class="mx-auto" alt="" />
           <h2>Add Money</h2>
         </div>
         <div
-          class="text-center border-2 font-semibold border-gray-300 flex flex-col justify-center items-center rounded-2xl"
+          id="cashout-button"  class="text-center border-2 font-semibold border-gray-300 flex flex-col justify-center items-center rounded-2xl"
         >
           <img src="./assets/send1.png" class="mx-auto" alt="" />
           <h2>cashout</h2>
@@ -95,7 +97,9 @@
     </div>
 
     <div class="form-section max-w-lg m-auto mt-5">
-      <div>
+
+      <!-- addmoney section -->
+      <div id="add-money-section">
         <h1 class="font-semibold ml-2">Add Money</h1>
         <form action="" class="bg-white rounded-2xl p-8">
           <div>
@@ -121,7 +125,7 @@
             <input
               id="amount-add"
               type="text"
-              placeholder="Add Amont to Witdraw"
+              placeholder="Add Amount to Witdraw"
               class="input bg-[#f4f5f7] mt-2 rounded-3xl w-full"
             />
           </div>
@@ -134,13 +138,57 @@
               class="input bg-[#f4f5f7] mt-2 rounded-3xl w-full"
             />
           </div>
-          <button 
+          <button
             class="btn btn-primary mt-3 w-full rounded-3xl bg-[#0874f2] border-0"
             id="add-money"
           >
             Add Money
           </button>
         </form>
+      </div>
+
+
+
+      <!-- cashout-section -->
+      <div id="cashout-section" style="display: none;">
+        <div>
+        <h1 class="font-semibold ml-2  text-1xl">Cash Out</h1>
+        <form action="" class="bg-white rounded-2xl p-8">
+          <div>
+            <h1 class="mt-2">Agent Number</h1>
+            <input
+              id=""
+              type="text"
+              placeholder="Enter 11 Digit Number"
+              class="input bg-[#f4f5f7] mt-2 rounded-3xl w-full"
+            />
+          </div>
+          <div>
+            <h1 class="mt-2">Amount</h1>
+            <input
+              id="amount-withdraw"
+              type="text"
+              placeholder="Add Amount to Witdraw"
+              class="input bg-[#f4f5f7] mt-2 rounded-3xl w-full"
+            />
+          </div>
+          <div>
+            <h1 class="mt-2">Pin Number</h1>
+            <input
+              id=""
+              type="text"
+              placeholder="Enter 4 Digit Pin"
+              class="input bg-[#f4f5f7] mt-2 rounded-3xl w-full"
+            />
+          </div>
+          <button
+            class="btn btn-primary mt-3 w-full rounded-3xl bg-[#0874f2] border-0"
+            id="withdraw-money-button"
+          >
+            Withdraw Money
+          </button>
+        </form>
+      </div>
       </div>
     </div>
 
