@@ -11,7 +11,7 @@ document.getElementById("loginBtn").addEventListener("click", function (event) {
   const pinnumbervalue = document.getElementById("pin-number").value;
 
   if (mobileNumber === mobileNumbervalue && password === pinnumbervalue) {
-    window.location.href = "main.html";
+    window.location.href = "home.html";
   } else {
     alert("Wrong Number Or Password");
   }
