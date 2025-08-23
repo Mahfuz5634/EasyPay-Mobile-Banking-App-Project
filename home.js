@@ -35,15 +35,23 @@ document
   });
 
 // toggleing
+const addMoneyBtn = document.getElementById("add-money-button");
+const cashoutBtn = document.getElementById("cashout-button");
 document
   .getElementById("add-money-button")
   .addEventListener("click", function () {
     document.getElementById("cashout-section").style.display = "none";
     document.getElementById("add-money-section").style.display = "block";
+
+    addMoneyBtn.classList.add("active-btn");
+    cashoutBtn.classList.remove("active-btn");
   });
 document
   .getElementById("cashout-button")
   .addEventListener("click", function () {
     document.getElementById("add-money-section").style.display = "none";
     document.getElementById("cashout-section").style.display = "block";
+
+    cashoutBtn.classList.add("active-btn");
+  addMoneyBtn.classList.remove("active-btn");
   });
