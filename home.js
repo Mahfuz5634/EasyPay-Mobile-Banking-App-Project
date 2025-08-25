@@ -44,8 +44,15 @@ document
     const allbutton = document.getElementsByClassName("same-class");
     for (let all of allbutton) {
       all.style.display = "none";
+     
     }
+    const stylebutton=document.querySelectorAll('.all-button');
+    for(let alls of stylebutton){
+     alls.classList.remove("active-btn");
+    }
+    document.getElementById("add-money-button").classList.add("active-btn");
     document.getElementById("add-money-section").style.display = "block";
+    
   });
 
 document
@@ -54,8 +61,15 @@ document
     const allbutton = document.getElementsByClassName("same-class");
     for (let all of allbutton) {
       all.style.display = "none";
+     
     }
+     const stylebutton=document.querySelectorAll('.all-button');
+    for(let alls of stylebutton){
+     alls.classList.remove("active-btn");
+    }
+    document.getElementById("cashout-button").classList.add("active-btn");
     document.getElementById("cashout-section").style.display = "block";
+ 
   });
 
 document
@@ -64,8 +78,15 @@ document
     const allbutton = document.getElementsByClassName("same-class");
     for (let all of allbutton) {
       all.style.display = "none";
+      
     }
+     const stylebutton=document.querySelectorAll('.all-button');
+    for(let alls of stylebutton){
+     alls.classList.remove("active-btn");
+    }
+    document.getElementById("transfer-button").classList.add("active-btn");
     document.getElementById("transfermoney-section").style.display = "block";
+
   });
 
 document.getElementById("get-bonus").addEventListener("click", function () {
@@ -73,5 +94,27 @@ document.getElementById("get-bonus").addEventListener("click", function () {
   for (let all of allbutton) {
     all.style.display = "none";
   }
+   const stylebutton=document.querySelectorAll('.all-button');
+    for(let alls of stylebutton){
+     alls.classList.remove("active-btn");
+    }
+    document.getElementById("get-bonus").classList.add("active-btn");
   document.getElementById("get-bonus-section").style.display = "block";
 });
+
+document.getElementById("pay-bill").addEventListener("click", function () {
+  const allbutton = document.getElementsByClassName("same-class");
+  for (let all of allbutton) {
+    all.style.display = "none";
+  }
+   const stylebutton=document.querySelectorAll('.all-button');
+    for(let alls of stylebutton){
+     alls.classList.remove("active-btn");
+    }
+    document.getElementById("pay-bill").classList.add("active-btn");
+  document.getElementById("pay-bill-section").style.display = "block";
+});
+
+
+
+
