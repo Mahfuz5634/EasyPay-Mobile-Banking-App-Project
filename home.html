@@ -41,7 +41,7 @@
           </div>
         </div>
         <div>
-          <button class="btn">
+          <button class="btn" id="LogoutBtn">
             <i class="fa-solid fa-right-to-bracket rotate-180 text-gray-600"></i
             ><span class="text-gray-600">Logout</span>
           </button>
@@ -61,7 +61,7 @@
       >
         <div
           id="add-money-button"
-          class="all-button text-center border-2 font-semibold border-gray-300 flex flex-col justify-center items-center rounded-2xl"
+          class="active-btn all-button text-center border-2 font-semibold border-gray-300 flex flex-col justify-center items-center rounded-2xl"
         >
           <img src="./assets/wallet1.png" class="mx-auto" alt="" />
           <h2>Add Money</h2>
@@ -95,7 +95,8 @@
           <h2>Pay Bill</h2>
         </div>
         <div
-          class="text-center font-semibold border-2 border-gray-300 flex flex-col justify-center items-center rounded-2xl"
+           id="transection-button"
+          class="all-button text-center font-semibold border-2 border-gray-300 flex flex-col justify-center items-center rounded-2xl"
         >
           <img src="./assets/transaction1.png" class="mx-auto" alt="" />
           <h2>Transection</h2>
@@ -105,7 +106,7 @@
 
     <div class="form-section max-w-lg m-auto mt-5">
       <!-- addmoney section -->
-      <div class="same-class" id="add-money-section" style="display: none;">
+      <div class="same-class" id="add-money-section" >
         <h1 class="font-semibold ml-2">Add Money</h1>
         <form action="" class="bg-white rounded-2xl p-8">
           <div>
@@ -310,6 +311,22 @@
           </button>
         </form>
       </div>
+
+      <!-- transection-section -->
+       <div class="same-class" id="transection-section" style="display: none">
+         <div class="flex justify-between items-center">
+           <h1 class="font-semibold ml-2">Transection History</h1>
+           <p>View All</p>
+         </div>
+         <div id="transection-history">
+
+         </div>
+         
+            
+         
+
+         </div>
+       </div>
     </div>
 
     <script src="home.js"></script>
